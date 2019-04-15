@@ -33,10 +33,10 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 	
 	# The general purpose templates
-	'django_adminlte'
+	'django_adminlte',
 
 	# Optional: Skin for the admin interface
-	'django_adminlte_theme'
+	'django_adminlte_theme',
 
 	'django.contrib.admin',
 	'django.contrib.auth',
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 	'django.contrib.sessions',
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
+	'home.apps.HomeConfig',
 ]
 
 MIDDLEWARE = [
@@ -85,9 +86,9 @@ DATABASES = {
 'ENGINE': 'django.db.backends.mysql',
 'NAME': 'db_my_parking_spot',
 'USER': 'root',
-'PASSWORD': 'root',
-    "HOST": '/opt/lampp/var/mysql/mysql.sock',   # Or an IP that your DB is hosted on
-    'PORT': '8888',
+'PASSWORD': '',
+'HOST': 'localhost', # for Ubuntu "HOST": '/opt/lampp/var/mysql/mysql.sock',   # Or an IP that your DB is hosted on
+'PORT': '3306', # Please check your port number and use
     }
     }
 
@@ -116,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
