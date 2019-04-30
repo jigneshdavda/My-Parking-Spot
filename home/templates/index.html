@@ -1,0 +1,12 @@
+{% extends "slot_status.html" %}
+
+{% block content %}
+  <h1>MPS Home</h1>
+  <p>Welcome to My Parking Spot!!!</p>
+  <h2>Dynamic content</h2>
+  <p>The parking lot had following record counts:</p>
+  <ul>
+    <li><strong>Total Slots:</strong> {{ slot_count }}</li>
+    <li><strong>Available Slots:</strong> {{ slot_available }}</li>
+  </ul>
+{% endblock %}
